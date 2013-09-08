@@ -15,5 +15,7 @@ end
 require 'toppings/generators/install/setups_generator'
 
 Toppings::Generators::Install::SetupsGenerator.with_template :modular_scale,
+                                                             vendor_library: "modular-scale",
+                                                             namespaced: false,
                                                              template_folder: Toppings::ModularScale.template_folder
 
